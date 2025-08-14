@@ -1,12 +1,12 @@
 package xtrakerns
 
 import (
-	//"errors"
-	"fmt"
-	"github.com/dereklstinson/gocudnn/cuda"
-	"github.com/dereklstinson/gocudnn/nvrtc"
-	"strconv"
-	"strings"
+    //"errors"
+    "fmt"
+    "github.com/negativeOne1/gocudnn/cuda"
+    "github.com/negativeOne1/gocudnn/nvrtc"
+    "strconv"
+    "strings"
 )
 
 //Kernel is used to build kernels
@@ -32,9 +32,9 @@ func CreateModule(k Kernel, dev cuda.Device) (*cuda.Module, error) {
 	if err != nil {
 		panic(err)
 	}
-	majstr := strconv.Itoa(major)
-	minstr := strconv.Itoa(minor)
-	computecapability := majstr + minstr
+    majstr := strconv.Itoa(major)
+    minstr := strconv.Itoa(minor)
+    computecapability := majstr + minstr
 	fmt.Println(k.Name, k.cuname(), computecapability)
 	err = p.AddNameExpression(k.Name)
 	if err != nil {
@@ -42,7 +42,8 @@ func CreateModule(k Kernel, dev cuda.Device) (*cuda.Module, error) {
 		//return nil, err
 	}
 
-	err = p.Compile("--gpu-architecture=compute_75", "-I/usr/local/cuda/include")
+    archflag := "--gpu-architecture=compute_" + computecapability
+    err = p.Compile(archflag, "-I/opt/cuda/include", "-I/opt/cuda/targets/x86_64-linux/include")
 	if err != nil {
 		logerr, err2 := p.GetLog()
 		if err2 != nil {

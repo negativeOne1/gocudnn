@@ -23,7 +23,7 @@ import (
 	"unsafe"
 
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 	"github.com/dereklstinson/half"
 )
 

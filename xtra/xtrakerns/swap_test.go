@@ -1,9 +1,9 @@
 package xtrakerns
 
 import (
-	"github.com/dereklstinson/gocudnn/cuda"
-	"runtime"
-	"testing"
+    "github.com/negativeOne1/gocudnn/cuda"
+    "runtime"
+    "testing"
 )
 
 func TestCreateModule(t *testing.T) {

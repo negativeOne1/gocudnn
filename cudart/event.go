@@ -5,7 +5,7 @@ package cudart
 */
 import "C"
 import "runtime"
-import "github.com/dereklstinson/gocudnn/gocu"
+import "github.com/negativeOne1/gocudnn/gocu"
 
 //Event is a cuda event
 type Event struct {

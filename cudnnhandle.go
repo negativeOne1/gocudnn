@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/cudart"
+    "github.com/negativeOne1/gocudnn/gocu"
 )
 
 //Handle is a struct containing a cudnnHandle_t which is basically a Pointer to a CUContext

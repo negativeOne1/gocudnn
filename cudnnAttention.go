@@ -9,7 +9,7 @@ import (
 	"unsafe"
 
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 //AttnQueryMap type is a flag for multihead attention.  Flags are exposed through type methods.

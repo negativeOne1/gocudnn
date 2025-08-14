@@ -3,9 +3,9 @@ package xtra
 import (
 	"errors"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cuda"
-	"github.com/dereklstinson/gocudnn/cudart"
+	gocudnn "github.com/negativeOne1/gocudnn"
+	"github.com/negativeOne1/gocudnn/cuda"
+	"github.com/negativeOne1/gocudnn/cudart"
 	"github.com/dereklstinson/cutil"
 )
 

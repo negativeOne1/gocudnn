@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dereklstinson/gocudnn/cuda"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
-	"github.com/dereklstinson/gocudnn/kernels"
+	"github.com/negativeOne1/gocudnn/cuda"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/kernels"
 )
 
 //Xtra is a holder for Xtra functions that are made by me, and not cuda or cudnn

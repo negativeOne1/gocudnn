@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 
-	"github.com/dereklstinson/gocudnn/cuda"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
-	"github.com/dereklstinson/gocudnn/nvrtc"
-	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/half"
+    "github.com/negativeOne1/gocudnn/cuda"
+    "github.com/negativeOne1/gocudnn/cudart"
+    "github.com/negativeOne1/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/nvrtc"
+    "github.com/dereklstinson/cutil"
+    "github.com/dereklstinson/half"
 )
 
-const cudapath = "/usr/local/cuda/include"
+const cudapath = "/opt/cuda/include"
 const cudaname = "cuda_fp16.h"
 
 func main() {
@@ -60,7 +60,12 @@ func main() {
 	p2 := program2()
 	err = p2.AddNameExpression("testfma2")
 	check(err)
-	err = p2.Compile("--gpu-architecture=compute_75", "-I/usr/local/cuda/include")
+    devs2, err := cuda.GetDeviceList()
+    check(err)
+    maj, _ := devs2[0].Major()
+    min, _ := devs2[0].Minor()
+    archflag := fmt.Sprintf("--gpu-architecture=compute_%d%d", maj, min)
+    err = p2.Compile(archflag, "-I/opt/cuda/include", "-I/opt/cuda/targets/x86_64-linux/include")
 	if err != nil {
 		log, err2 := p2.GetLog()
 		check(err2)

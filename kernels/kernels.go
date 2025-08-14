@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	//	"github.com/dereklstinson/gocudnn"
+	//	"github.com/negativeOne1/gocudnn"
 )
 
 //Device just has to return those two things in order to compute the kernels
@@ -27,7 +27,7 @@ const nvccarg = "--gpu-architecture=compute_"
 const nvccarg1 = "--gpu-code=compute_"
 const nvccarg2 = "--ptx "
 
-const defaultmakedirectory = "/home/derek/go/src/github.com/dereklstinson/gocudnn/kernels/"
+const defaultmakedirectory = "/home/derek/go/src/github.com/negativeOne1/gocudnn/kernels/"
 
 type makefile struct {
 	lines []string

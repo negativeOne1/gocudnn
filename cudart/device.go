@@ -8,7 +8,7 @@ package cudart
 import "C"
 import (
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 //Device is a struct that holds a device info.

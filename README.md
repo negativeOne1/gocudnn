@@ -1,7 +1,7 @@
 # gocudnn [![Coverage Status](https://coveralls.io/repos/github/dereklstinson/gocudnn/badge.svg?branch=master)](https://coveralls.io/github/dereklstinson/gocudnn?branch=master)
 <p><img alt="Gopher" title="GoCu" src="GoCu.png" width="500"/></p>
 
-V0.1_75_101 is compiling.  It is cudnn 7.5 w/ cuda 10.1, There might be bugs. Send me a pull request. 
+V0.1_75_101 is compiling.  It is cudnn 7.5 w/ CUDA 12.9, There might be bugs. Send me a pull request. 
 
 I made a BatchNormalD descriptor and BatchNormDEx descriptor.  You will call this with a "Create" function. and set it like the other descriptors.  
 
@@ -66,7 +66,7 @@ If I ever go to modules. These will be placed in there.
 
 cuDNN 7.5 found at or around [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 
-CUDA 10.1 Toolkit found at or around [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
+CUDA 12.9 Toolkit found at or around [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
 
 Golang V1.13 found at or around [https://golang.org/dl/](https://golang.org/dl/)
 
@@ -74,8 +74,8 @@ Golang V1.13 found at or around [https://golang.org/dl/](https://golang.org/dl/)
 Will need to set the environmental variables to something along the lines as below.
 
 ```text
-export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\
+export PATH=/opt/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/opt/cuda/lib64\
                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 export PATH=$PATH:/usr/local/go/bin

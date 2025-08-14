@@ -5,10 +5,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
+	gocudnn "github.com/negativeOne1/gocudnn"
 )
 
 func TestConvolution2(t *testing.T) {

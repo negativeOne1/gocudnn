@@ -8,11 +8,11 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 
-	"github.com/dereklstinson/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/cudart"
 
-	"github.com/dereklstinson/gocudnn/nvjpeg"
+	"github.com/negativeOne1/gocudnn/nvjpeg"
 )
 
 func main() {

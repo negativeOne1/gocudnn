@@ -6,10 +6,10 @@ package nvjpeg
 */
 import "C"
 import (
-	"errors"
-	"unsafe"
+    "errors"
+    "unsafe"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/gocu"
 )
 
 //Image is of type C.nvjpegImage_t.
@@ -175,7 +175,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 		if err != nil {
 			return nil, err
 		}
-		img.pitch[0] = (C.uint)(pitch[0])
+        img.pitch[0] = (C.size_t)(pitch[0])
 		img.channel[0] = (*C.uchar)(ptr.Ptr())
 		return img, nil
 
@@ -187,7 +187,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 			if err != nil {
 				return nil, err
 			}
-			img.pitch[i] = (C.uint)(pitch[i])
+            img.pitch[i] = (C.size_t)(pitch[i])
 			img.channel[i] = (*C.uchar)(ptr.Ptr())
 		}
 		return img, nil
@@ -199,7 +199,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 			if err != nil {
 				return nil, err
 			}
-			img.pitch[i] = (C.uint)(pitch[0])
+            img.pitch[i] = (C.size_t)(pitch[0])
 			img.channel[i] = (*C.uchar)(ptr.Ptr())
 		}
 		return img, nil
@@ -211,7 +211,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 			if err != nil {
 				return nil, err
 			}
-			img.pitch[i] = (C.uint)(pitch[0])
+            img.pitch[i] = (C.size_t)(pitch[0])
 			img.channel[i] = (*C.uchar)(ptr.Ptr())
 		}
 		return img, nil
@@ -222,7 +222,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 		if err != nil {
 			return nil, err
 		}
-		img.pitch[0] = (C.uint)(pitch[0] * 3)
+        img.pitch[0] = (C.size_t)(pitch[0] * 3)
 		img.channel[0] = (*C.uchar)(ptr.Ptr())
 		return img, nil
 
@@ -232,7 +232,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 		if err != nil {
 			return nil, err
 		}
-		img.pitch[0] = (C.uint)(pitch[0] * 3)
+        img.pitch[0] = (C.size_t)(pitch[0] * 3)
 		img.channel[0] = (*C.uchar)(ptr.Ptr())
 		return img, nil
 
@@ -245,7 +245,7 @@ func CreateImageDest(o OutputFormat, pitch, height []int32, allocator gocu.Alloc
 			if err != nil {
 				return nil, err
 			}
-			img.pitch[i] = (C.uint)(pitch[i])
+            img.pitch[i] = (C.size_t)(pitch[i])
 			img.channel[i] = (*C.uchar)(ptr.Ptr())
 		}
 		return img, nil

@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/dereklstinson/gocudnn/cudart/crtutil"
+	"github.com/negativeOne1/gocudnn/cudart/crtutil"
 
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 func TestNewWorker(t *testing.T) {

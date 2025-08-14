@@ -5,9 +5,9 @@ package nvjpeg
 */
 import "C"
 import (
-	"runtime"
+    "runtime"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/gocu"
 )
 
 //DecodeParams - decode parameters structure. Used to set decode-related tweaks

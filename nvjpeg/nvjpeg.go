@@ -6,9 +6,9 @@ package nvjpeg
 */
 import "C"
 import (
-	"runtime"
+    "runtime"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/gocu"
 )
 
 //Handle - Opaque library handle identifier.

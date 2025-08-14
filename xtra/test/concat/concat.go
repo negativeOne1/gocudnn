@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
-	"github.com/dereklstinson/gocudnn/xtra"
+    gocudnn "github.com/negativeOne1/gocudnn"
+    "github.com/negativeOne1/gocudnn/cudart"
+    "github.com/negativeOne1/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/xtra"
 	"github.com/dereklstinson/cutil"
 	"runtime"
 	"time"

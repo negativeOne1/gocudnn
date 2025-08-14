@@ -7,11 +7,11 @@ import (
 	"github.com/dereklstinson/gocunets/utils"
 
 	"github.com/dereklstinson/cutil"
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cuda"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
-	"github.com/dereklstinson/gocudnn/kernels"
+	gocudnn "github.com/negativeOne1/gocudnn"
+	"github.com/negativeOne1/gocudnn/cuda"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/kernels"
 	"github.com/dereklstinson/half"
 )
 

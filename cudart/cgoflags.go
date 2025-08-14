@@ -1,7 +1,7 @@
 package cudart
 
 /*
-#cgo LDFLAGS:-L/usr/local/cuda/lib64 -lcudart -lcuda
-#cgo CFLAGS: -I/usr/local/cuda/include/
+#cgo LDFLAGS:-L/opt/cuda/lib64 -L/opt/cuda/targets/x86_64-linux/lib -lcudart -lcuda
+#cgo CFLAGS: -I/opt/cuda/include -I/opt/cuda/targets/x86_64-linux/include
 */
 import "C"

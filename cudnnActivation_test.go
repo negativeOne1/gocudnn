@@ -3,7 +3,7 @@ package gocudnn_test
 import (
 	"testing"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
+gocudnn "github.com/negativeOne1/gocudnn"
 )
 
 func TestCreateActivationDescriptor(t *testing.T) {

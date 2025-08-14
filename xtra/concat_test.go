@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cudart"
+	gocudnn "github.com/negativeOne1/gocudnn"
+	"github.com/negativeOne1/gocudnn/cudart"
 	"github.com/dereklstinson/cutil"
 
 	"testing"

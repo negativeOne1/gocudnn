@@ -7,8 +7,8 @@ import (
 	"errors"
 	"unsafe"
 
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 //GetLibVersion - return A struct containing separate values for major and minor revision and build number.

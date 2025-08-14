@@ -3,7 +3,7 @@ package npp_test
 import (
 	"testing"
 
-	"github.com/dereklstinson/gocudnn/npp"
+	"github.com/negativeOne1/gocudnn/npp"
 )
 
 func TestMemory(t *testing.T) {

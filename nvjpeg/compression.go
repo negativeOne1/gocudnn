@@ -6,10 +6,10 @@ package nvjpeg
 */
 import "C"
 import (
-	"fmt"
-	"runtime"
+    "fmt"
+    "runtime"
 
-	"github.com/dereklstinson/gocudnn/gocu"
+    "github.com/negativeOne1/gocudnn/gocu"
 )
 
 //EncoderParams is a struct that contains paramerters for the encoder

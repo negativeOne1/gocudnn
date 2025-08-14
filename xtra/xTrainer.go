@@ -5,12 +5,12 @@ import (
 	"errors"
 	"math"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cuda"
+	gocudnn "github.com/negativeOne1/gocudnn"
+	"github.com/negativeOne1/gocudnn/cuda"
 	"github.com/dereklstinson/half"
 
-	//"github.com/dereklstinson/gocudnn/gocu"
-	"github.com/dereklstinson/gocudnn/kernels"
+	//"github.com/negativeOne1/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/kernels"
 	"github.com/dereklstinson/cutil"
 )
 

@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/cudart"
 )
 
 func TestReadWriter_Read(t *testing.T) {

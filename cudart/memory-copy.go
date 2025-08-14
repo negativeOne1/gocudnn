@@ -8,7 +8,7 @@ import (
 	"unsafe"
 
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 //MemcpyKind are enum flags for mem copy can be passed using methdos

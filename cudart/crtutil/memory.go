@@ -9,8 +9,8 @@ import (
 	"unsafe"
 
 	"github.com/dereklstinson/cutil"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 //ReadWriter is made to work with the golang io packages

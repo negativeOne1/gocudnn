@@ -5,9 +5,9 @@ import (
 	"runtime"
 	"testing"
 
-	gocudnn "github.com/dereklstinson/gocudnn"
-	"github.com/dereklstinson/gocudnn/cudart"
-	"github.com/dereklstinson/gocudnn/gocu"
+gocudnn "github.com/negativeOne1/gocudnn"
+	"github.com/negativeOne1/gocudnn/cudart"
+	"github.com/negativeOne1/gocudnn/gocu"
 )
 
 func TestDeconvolution(t *testing.T) {
